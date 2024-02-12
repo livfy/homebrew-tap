@@ -9,7 +9,7 @@ class FinderTags < Formula
 
   pour_bottle? only_if: :clt_installed
 
-  depends_on xcode: ["15.2", :build]
+  depends_on xcode: ["15.0.1", :build]
   depends_on :macos
   uses_from_macos "swift"
 
