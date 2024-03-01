@@ -12,8 +12,6 @@ class FinderTags < Formula
     sha256 cellar: :any_skip_relocation, arm64_sonoma: "9fb2cb02f75b34d52dd5be84530b6ad68d8d5dbbb64582fad1ff823c4d5534f1"
   end
 
-  pour_bottle? only_if: :clt_installed
-
   depends_on xcode: ["15.0.1", :build]
   depends_on :macos
   uses_from_macos "swift"
