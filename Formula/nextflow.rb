@@ -4,6 +4,7 @@ class Nextflow < Formula
   url "https://github.com/nextflow-io/nextflow/archive/refs/tags/v25.04.6.tar.gz"
   sha256 "e0891da76f2e17336eaeadac14971a7e69cdc07722d44b605489c4dc6718d6a5"
   license "Apache-2.0"
+  revision 1
 
   livecheck do
     url :stable
@@ -19,6 +20,8 @@ class Nextflow < Formula
   depends_on "openjdk"
 
   def install
+    ENV["JAVA_HOME"] = Formula["openjdk"].opt_prefix
+
     system "make", "pack"
     bin.install "build/releases/nextflow-#{version}-dist" => "nextflow"
   end
