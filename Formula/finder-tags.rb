@@ -8,6 +8,11 @@ class FinderTags < Formula
   revision 1
   head "https://github.com/livfy/finder-tags.git", branch: "main"
 
+  bottle do
+    root_url "https://ghcr.io/v2/livfy/tap"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "c1970e29728fac96a80c38ab582cb23da1edb8058cf20ef9a6d62dac37222ac9"
+  end
+
   depends_on xcode: ["15.0.1", :build]
   depends_on :macos
   uses_from_macos "swift"
