@@ -13,8 +13,8 @@ class Nextflow < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/livfy/tap"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "33e7507b81a69c30893a3818a2eaa1852b9950651bee069c43b55428b06156b3"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "83a8b237ec122b6a916e91fc99a0fadd4a82d576fe80601421ba64ea18508746"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "e71d20143daa29058d5e4e82104e0adbbede802fda20a987f657edeb7af1ea30"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "7cccba723a7c09c9f5b76b179dcfc0a9eb2ade7586917ad4f5a6b5896fd38253"
   end
 
   depends_on "openjdk"
