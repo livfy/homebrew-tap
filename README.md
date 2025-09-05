@@ -1,10 +1,10 @@
-# Livfi Tap
+# Livfy Tap
 
 ## How do I install these formulae?
 
-`brew install livfi/tap/<formula>`
+`brew install livfy/tap/<formula>`
 
-Or `brew tap livfi/tap` and then `brew install <formula>`.
+Or `brew tap livfy/tap` and then `brew install <formula>`.
 
 ## Documentation
 
