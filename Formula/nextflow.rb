@@ -10,6 +10,12 @@ class Nextflow < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://ghcr.io/v2/livfy/tap"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "b7fb7f3a60d7cd27d5169669728e87c754b33cdf80a4892d57c9e20d65fce93f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "b4a241b2b13a2cbfd810d8105e6972d838a2416910ac442f554659645f2ca220"
+  end
+
   depends_on "openjdk"
 
   def install
